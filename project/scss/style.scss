@@ -1,0 +1,234 @@
+$main-color: #00cc99;
+$minor-color: #f7f7f7;
+$accent: #00a67d;
+$media-bg: #f6f6f6;
+$fb-color: #4460a0;
+$twi-color: #00aaec;
+$media-line: #cccccc;
+$tb-border: #dddddd;
+$tb-hover: #ebfffa;
+$gradient1: #00644c;
+$gradient2: #009772;
+
+@import "mixin";
+@import "grid";
+@import "reset";
+
+// *{outline: 1px solid red;}
+
+.clearfix{
+    clear: both;
+}
+.p-row{
+    padding-left: 30px;
+    padding-right: 30px
+}
+.p-col{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.mr-35{
+    margin-right: 35px;
+}
+.l-title{
+    font-size: 25px;
+    text-align: center;
+}
+body{
+    font-family: "Microsoft JhengHei";
+}
+.wrap{
+    max-width: 1002px;
+    margin: 0 auto;
+}
+.media{
+    background: $media-bg;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .media-fb{
+        padding-right: 10px;
+        border-right: 1px solid $media-line;
+        a{
+            display: block;
+            text-decoration: none;
+            color: $fb-color;
+        }
+    }
+    .media-twi{
+        padding-left: 10px;
+        a{
+            display: block;
+            text-decoration: none;
+            color: $twi-color;
+        }
+    }
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 a{
+        background: url(../images/logo.png) no-repeat;
+        display: block;
+        width: 170px;
+        height: 36px;
+        @include img-hide-text;
+        margin: auto 0;
+    }
+}
+.menu{
+    display: flex;
+    a{
+        display: block;
+        text-decoration: none;
+        font-size: 18px;
+        color: $main-color;
+        font-weight: bold;
+        margin-left: 40px;
+        padding: 20px 0 15px 0;
+        @include hvr-line-left-to-right($main-color, 4px)
+    }
+    a:hover{
+        background-size: 100% 4px;
+    }
+    .submenu{
+        display: none;
+    }
+}
+.banner{
+    background: url(../images/banner.png) no-repeat center;
+    height: 346px;
+    display: flex;
+    align-items: center;
+    h1{
+        font-size: 38px;
+        color: #fff;
+        line-height: 45px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .card{
+        flex: 1;
+        box-shadow: 0 1px 3px gray;
+        border-radius: 5px;
+        padding: 15px;
+        .card-img{
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+        }
+        p{
+            line-height: 22px;
+            text-align: justify;
+        }
+    }
+}
+.card-list li{
+    line-height: 22px;
+    @include ul-disc-inside
+}
+.compare{
+    padding: 0 60px;
+    .l-title{
+        font-weight: bold;
+    }
+    .compare-table{
+        margin: 40px auto;
+        width: 100%;
+        tr{
+            border-bottom: 1px solid $tb-border;
+            text-align: left;
+        }
+        tr:hover{
+            background: $tb-hover;
+        }
+        th{
+            border-top: 1px solid $tb-border;
+            background: $minor-color;
+            font-weight: bold;
+            padding: 10px 20px;
+            width: 25%;
+        }
+        td{
+            padding: 10px 20px;
+            width: 25%;
+        }
+    }
+}
+.accent{
+    color: $accent;
+    font-weight: bold;
+}
+.interest{
+    background: linear-gradient($gradient1, $gradient2);
+    .l-title{
+        margin-bottom: 25px;
+        color: #fff;
+        line-height: 36px;
+    }
+    form{
+        display: flex;
+        justify-content: space-between;
+        textarea{
+            width: 49%;
+            resize: none;
+            border-radius: 5px;
+            padding: 10px;
+            border: none;
+        }
+        textarea:focus{
+            outline: none;
+        }
+        .interest-form{
+            width: 49%;
+        }
+    }
+}
+.interest-form{
+    label{
+        display: block;
+        color: #fff;
+        padding-bottom: 5px;
+    }
+    input{
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        padding: 9px;
+        margin-bottom: 15px;
+        border: none;
+    }
+    input:focus{
+        outline: none;
+    }
+    .interest-form-submit{
+        width: 70px;
+        padding: 8px;
+        background: $main-color;
+        color: #fff;
+        border: none;
+        margin-bottom: 0;
+        float: right;
+    }
+    .interest-form-submit:hover{
+        background: $accent;
+    }
+}
+.footer{
+    
+}
