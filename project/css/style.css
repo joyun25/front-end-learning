@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, input, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font-family: "Microsoft JhengHei";
+}
+.wrap{
+	width: 1002px;
+	margin: 0 auto;
+}
+.part1{
+	background-color: #f6f6f6;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 20px;
+}
+.part1 a{
+	display: flex;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+.part1 a img{
+	padding-right: 2px;
+}
+.line{
+	background-color: #cccccc;
+	height: 15px;
+	width: 1px;
+	margin: 5px 0;
+}
+.facebook{
+	color: #4460a0;
+}
+.twitter{
+	color: #00aaec;
+}
+.facebook:hover, .twitter:hover{
+	font-weight: bold;
+}
+.part2{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 10px 0 30px;
+}
+.part2 h1 a{
+	background-image: url(../images/logo.png);
+	width: 170px;
+	height: 36px;
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.menu{
+	display: flex;
+	align-items: center;
+}
+.menu li a{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #00cc99;
+	padding: 15px;
+	margin: 0 5px 0 8px;
+	border-bottom: 5px solid transparent;
+}
+.menu li a:hover{
+	border-bottom: 5px solid #00cc99;
+}
+.part3{
+	background-image: url(../images/banner.png);
+	width: 1002px;
+	height: 346px;
+	display: flex;
+	align-items: center;
+}
+.part3 h2{
+	font-size: 38px;
+	color: white;
+	line-height: 45px;
+	padding: 30px;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 1002px;
+}
+.part4{
+	display: flex;
+	margin: 40px 10px;
+}
+.part4 li{
+	flex: 1;
+	text-align: center;
+	padding: 15px;
+	margin: 20px;
+	box-shadow: 0 2px 2px gray;
+	border-radius: 3px;
+}
+.part4 li div{
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.part4 li h4{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+}
+.part4 li p{
+	line-height: 22px;
+	text-align: justify;
+}
+.part4 .list li{
+	list-style: disc;
+	text-align: left;
+	padding: 0;
+	margin: 0 0 0 6px;
+	box-shadow: none;
+	line-height: 22px;
+	list-style-position: inside;
+}
+.part5{
+	padding-bottom: 65px;
+}
+.part5 h3{
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px 0 40px 0;
+}
+.part5 table{
+	display: flex;
+	justify-content: center;
+}
+.part5 th, .part5 td{
+	width: 190px;
+	text-align: left;
+	padding: 8px 0 12px 23px;
+	border-bottom: 2px solid #dddddd;
+}
+.part5 th{
+	border-top: 2px solid #dddddd;
+	font-weight: bold;
+	background: #f7f7f7;
+}
+.part5 tr:hover{
+	background-color: #ebfffa;
+}
+.accent{
+	color: #00a67d;
+	font-weight: bold;
+}
+.part6{
+	background-image: linear-gradient(#00644c, #009772);
+	padding: 30px;
+}
+.part6 h3{
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	line-height: 37px;
+	margin-bottom: 25px;
+}
+.part6 form{
+	display: flex;
+}
+textarea{
+	flex: 1;
+	border-radius: 5px;
+	padding: 10px;
+	width: 442px;
+}
+.part6 ul{
+	flex: 1;
+	margin-left: 28px;
+}
+.part6 label{
+	color: white;
+	padding-bottom: 7px;
+	display: block;
+}
+.part6 li input{
+	border-radius: 3px;
+	margin-bottom: 13px;
+	width: 440px;
+	height: 32px;
+	padding-left: 10px;
+}
+textarea:-moz-focusring, .part6 li input:-moz-focusring{
+	background-color: rgb(224, 224, 224);
+	outline: 0;
+	border-color: #94989b;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.075),0 0 8px rgba(59, 149, 223, 0.6);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.075),0 0 8px rgba(59, 149, 223, 0.6);
+}
+textarea:focus, .part6 li input:focus{
+	background-color: rgb(224, 224, 224);
+	outline: 0;
+	border-color: #94989b;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.075),0 0 8px rgba(59, 149, 223, 0.6);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.075),0 0 8px rgba(59, 149, 223, 0.6);
+}
+.part6 .button{
+	background-color: #00cc99;
+	color: white;
+	width: 70px;
+	height: 32px;
+	border-radius: 3px;
+	border: none;
+	margin-left: 380px;
+	margin-top: 6px;
+}
+.part6 .button:hover{
+	background-color: lightseagreen;
+}
+.part7{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+.bottom{
+	display: flex;
+	flex-direction: column;
+}
+.bottom p{
+	padding: 5px;
+}
+.bottom p a:link{
+	color: #e12d80;
+}
+.bottom p a:hover{
+	color: crimson;
+}
+.bottom p a:active{
+	color: black;
+}
+.bottom p a:visited{
+	color: rgb(162, 0, 255);
+}
