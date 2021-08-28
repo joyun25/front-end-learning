@@ -20,30 +20,25 @@
     <title>讓您奠定良好的前端基礎 | 六角學院</title>
 </head>
 <body>
-
-<!-- 
-part1:灰色的社群媒體部分
-part2:白色的logo及選單區塊
-part3:大圖部分
-part4:課程重點三大圖片區塊
-part5:白色的對照表
-part6:綠色的表單區塊
-part7:白色的footer部分
--->
-
     <div class="wrap">
-        <div class="part1">
-            <a href="#" target="_blank" title="facebook">
-                <img src="images/facebookIcon.png" alt="facebook icon">
-                <p class="facebook">粉絲團</p>
-            </a>
-            <div class="line"></div>
-            <a href="#" target="_blank" title="twitter">
-                <img src="images/twitterIcon.png" alt="twitter icon">
-                <p class="twitter">追蹤我們</p>
-            </a>
-        </div>
-        <div class="part2">
+        <ul class="social-media">
+            <li>
+                <a href="#" target="_blank" title="facebook">
+                    <img src="images/facebookIcon.png" alt="facebook icon">
+                    <p class="facebook">粉絲團</p>
+                </a>
+            </li>
+            <li>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="#" target="_blank" title="twitter">
+                    <img src="images/twitterIcon.png" alt="twitter icon">
+                    <p class="twitter">追蹤我們</p>
+                </a>
+            </li>
+        </ul>
+        <div class="menu-part">
             <h1><a href="#" target="_blank" title="六角學院首頁">Hex School</a></h1>
             <ul class="menu">
                 <li><a href="#">首頁</a></li>
@@ -51,10 +46,10 @@ part7:白色的footer部分
                 <li><a href="#">聯絡我們</a></li>
             </ul>
         </div>
-        <div class="part3">
+        <div class="banner">
             <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
         </div>
-        <ul class="part4">
+        <ul class="main">
             <li>
                 <div>
                     <img src="images/html.png" alt="html5">
@@ -85,7 +80,7 @@ part7:白色的footer部分
                 </ul>
             </li>
         </ul>
-        <div class="part5">
+        <div class="chart">
             <h3>線上及實體課程的差異</h3>
             <table>
                 <tr>
@@ -132,28 +127,32 @@ part7:白色的footer部分
                 </tr>
             </table>
         </div>
-        <div class="part6">
+        <div class="sheet">
             <h3>對我們的課程有興趣嗎？<br>歡迎留下您的資料</h3>
             <form action="#">
                 <textarea name="textarea" id="" rows="14" placeholder="我想說…"></textarea>
-                <ul>
-                    <li>
-                        <label for="name">姓名</label>
-                        <input type="text" name="name" id="name" class="words" placeholder="請輸入姓名">
-                    </li>
-                    <li>
-                        <label for="telephone">電話</label>
-                        <input type="text" name="telephone" id="telephone" class="words" placeholder="請輸入連絡電話">
-                    </li>
-                    <li>
-                        <label for="email">信箱</label>
-                        <input type="text" name="email" id="email" class="words" placeholder="請輸入電子信箱">
-                    </li>
-                    <input type="submit" value="送出" class="button">
-                </ul>
+                <div class="info">
+                    <ul>
+                        <li>
+                            <label for="name">姓名</label>
+                            <input type="text" name="name" id="name" class="words" placeholder="請輸入姓名">
+                        </li>
+                        <li>
+                            <label for="telephone">電話</label>
+                            <input type="tel" name="telephone" id="telephone" class="words" placeholder="請輸入連絡電話">
+                        </li>
+                        <li>
+                            <label for="email">信箱</label>
+                            <input type="email" name="email" id="email" class="words" placeholder="請輸入電子信箱">
+                        </li>
+                    </ul>
+                    <div class="button">
+                        <input type="submit" value="送出">
+                    </div>
+                </div>
             </form>
         </div>
-        <div class="part7">
+        <div class="footer">
             <a href="#" target="_blank" title="六角學院"><img src="images/footerLogo.png" alt="hexschool logo"></a>
             <div class="bottom">
                 <p>聯絡我們：<a href="mailto:hexschool@gmail.com" title="透過電子信箱聯絡我們">hexschool@gmail.com</a></p>
