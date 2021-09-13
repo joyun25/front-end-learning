@@ -1,0 +1,232 @@
+$main-color: #00cc99
+$minor-color: #f7f7f7
+$accent: #00a67d
+$media-bg: #f6f6f6
+$fb-color: #4460a0
+$twi-color: #00aaec
+$media-line: #cccccc
+$tb-border: #dddddd
+$tb-hover: #ebfffa
+$gradient1: #00644c
+$gradient2: #009772
+
+@import "_mixin.sass"
+@import "_grid.sass"
+@import "_reset.scss"
+
+.px-1
+    padding-left: 30px
+    padding-right: 30px
+.py-1
+    padding-top: 30px
+    padding-bottom: 30px
+.px-2
+    padding-left: 60px
+    padding-right: 60px
+.py-2
+    padding-top: 60px
+    padding-bottom: 60px
+.mb-1
+    margin-bottom: 30px
+
+body
+    font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif 
+.wrap
+    width: 1002px
+    margin: 0 auto
+.media
+    background: $media-bg
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding-top: 5px
+    padding-bottom: 5px
+    a
+        display: block
+        text-decoration: none
+        img
+            padding-right: 2px
+.facebook
+    color: $fb-color
+    padding-right: 10px
+    border-right: 1px solid $media-line
+.twitter
+    color: $twi-color
+    padding-left: 10px
+
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+.logo-header
+    align-self: center
+    display: block
+    text-decoration: none
+    background-image: url('../images/logo-header.png')
+    width: 170px
+    height: 36px
+    text-indent: 101%
+    white-space: nowrap
+    overflow: hidden
+.menu
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    text-align: center
+    > li
+        margin-left: 40px
+        position: relative
+        a
+            display: block
+            text-decoration: none
+            color: $main-color
+            font-size: 18px
+            font-weight: bold
+            padding: 25px 0 15px
+            background-image: linear-gradient($main-color, $main-color)
+            background-position: left bottom
+            background-size: 0 4px
+            background-repeat: no-repeat
+            transition: background-size 0.18s linear
+        a:hover, .menu-products.active, .menu-contact.active
+            background-size: 100% 4px
+.menu-products-sub, .menu-contact-sub
+    display: none
+    position: absolute
+    top: 100%
+    left: 0
+    right: 0
+    background: #fff
+
+.banner
+    background-color: #000
+    background-image: url('../images/banner.png')
+    height: 346px
+    background-position: center
+    background-size: cover
+    display: flex
+    align-items: center
+h1
+    font-size: 38px
+    line-height: 45px
+    color: #fff
+    background: #00000088
+    width: 100%
+
+.cards
+    display: flex
+    justify-content: space-between
+.card
+    flex: 1
+    max-width: 290px
+    padding: 15px
+    text-align: center
+    box-shadow: 0 0 5px gray
+    border-radius: 3px
+    line-height: 20px
+    h3
+        font-size: 20px
+        padding: 10px
+        font-weight: bold
+    p
+        text-align: justify
+.img-container
+    height: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+.card-feature
+    text-align: left
+    list-style-type: disc
+    list-style-position: inside
+
+.compare
+    text-align: center
+    h2
+        font-size: 25px
+        font-weight: bold
+    table
+        width: 100%
+        margin: 0 auto
+        text-align: left
+        tr
+            border-bottom: 1px solid $tb-border
+        tr:hover
+            background: $tb-hover
+        th
+            padding: 10px 20px
+            font-weight: bold
+            background: $minor-color
+            border-top: 1px solid $tb-border
+        td
+            padding: 10px 20px
+.accent
+    color: $accent
+    font-weight: bold
+
+.interest
+    background-image: linear-gradient($gradient1, $gradient2)
+    color: #fff
+    h2
+        font-size: 25px
+        line-height: 35px
+        text-align: center
+.form-interest
+    display: flex
+    justify-content: space-between
+    textarea
+        width: 49%
+        border-radius: 3px
+        resize: none
+        padding: 10px
+        border: 0
+    textarea:focus
+        outline: none
+.form-apart
+    width: 49%
+    display: flex
+    flex-direction: column
+    label
+        padding-bottom: 5px
+        cursor: pointer
+    input
+        border-radius: 3px
+        padding: 6px
+        border: 0
+        margin-bottom: 15px
+    input:focus
+        outline: none
+    button
+        align-self: flex-end
+        font-size: 15px
+        color: #fff
+        width: 70px
+        padding: 5px
+        border: none
+        border-radius: 3px
+        background: $main-color
+        cursor: pointer
+    button:hover
+        background: #1de7b5
+
+.footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    > a
+        display: block
+.contact
+    li
+        margin-bottom: 5px
+        p
+            display: inline-block
+        a
+            display: inline-block
+            text-decoration: none
+            color: #e12d80
+        a:visited
+            color: blue
+        a:hover
+            color: crimson
+        a:active
+            color: #a200ff
